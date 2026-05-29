@@ -1,3 +1,37 @@
+const colecaoText = '> Nova coleção!';
+const colecaoEl = document.getElementById('colecao');
+colecaoEl.textContent = '';
+
+let colecaoIndex = 0;
+let isDeleting = false;
+const typingSpeed = 120;
+const pauseAfterTyping = 2000;
+const pauseAfterDeleting = 600;
+
+function loopTyping() {
+  if (!isDeleting) {
+    colecaoIndex += 1;
+    colecaoEl.textContent = colecaoText.slice(0, colecaoIndex);
+    if (colecaoIndex === colecaoText.length) {
+      isDeleting = true;
+      setTimeout(loopTyping, pauseAfterTyping);
+      return;
+    }
+  } else {
+    colecaoIndex -= 1;
+    colecaoEl.textContent = colecaoText.slice(0, colecaoIndex);
+    if (colecaoIndex === 0) {
+      isDeleting = false;
+      setTimeout(loopTyping, pauseAfterDeleting);
+      return;
+    }
+  }
+
+  setTimeout(loopTyping, typingSpeed);
+}
+
+loopTyping();
+
 function atualizarContador() {
   const agora = new Date();
   const fim = new Date();
