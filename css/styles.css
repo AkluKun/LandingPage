@@ -1,0 +1,314 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #000000;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header {
+  background: #1a1a1a;
+  position: sticky;
+  top: 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  margin: 0 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+  
+}
+
+.logo span {
+  color: #16a703;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color:aliceblue;
+  margin: 0 0.50rem;
+}
+
+.icons-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero {
+  padding: 4rem 0;
+  background: linear-gradient(180deg, #fff 0%, #f7f7f8 100%);
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.05;
+  margin: 1rem 0;
+}
+
+.hero h1 span {
+  color: #16a703;
+}
+
+.hero p {
+  max-width: 520px;
+  margin-bottom: 1.75rem;
+  color: #555;
+}
+
+.btn-info {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-info a,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-info a:first-child,
+.btn {
+  background: #111;
+  color: #fff;
+}
+
+.btn-info a:nth-child(2) {
+  background: #fff;
+  border: 1px solid #111;
+  color: #111;
+}
+
+.btn:hover,
+.btn-info a:hover {
+  transform: translateY(-2px);
+}
+
+.facil {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.facil-item {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+}
+
+.facil-item p {
+  margin-top: 0.75rem;
+}
+
+.facil-item .cima {
+  font-weight: 700;
+}
+
+.hero-image {
+  border-radius: 1.5rem;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.1);
+}
+
+.container-produtos,
+.container-sobre,
+.Feedback,
+.promocao {
+  padding: 4rem 0;
+}
+
+.container-produtos p,
+.container-sobre p,
+.Feedback p,
+.promocao p {
+  color: #16a703;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.container-produtos h3,
+.container-sobre h3,
+.Feedback h3,
+.promocao h3 {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.container-produtos .grid,
+.grid-sobre,
+.grid-feedback {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.produto,
+.sobre-item,
+.feedback-item,
+.promocao .info-promocao {
+  background: #fff;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+}
+
+.produto h4,
+.sobre-item h1,
+.feedback-item h4,
+.promocao h1 {
+  margin: 1rem 0 0.5rem;
+}
+
+.produto p,
+.sobre-item p,
+.feedback-item p,
+.promocao p {
+  color: #555;
+}
+
+.btn-comprar {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container-sobre {
+  background: #fff;
+}
+
+.container-sobre .grid-sobre {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 2rem;
+}
+
+.Feedback .grid-feedback {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 2rem;
+}
+
+.promocao {
+  background: linear-gradient(135deg, #111 0%, #1f2937 100%);
+  color: #16a703;
+}
+
+.promocao .container-promocao {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.promocao .info-promocao h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.promocao .contador {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contador-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 1rem;
+  min-width: 90px;
+  text-align: center;
+}
+
+.contador-item p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.site-footer {
+  padding: 1.2rem 0;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .hero .container,
+  .promocao .container-promocao {
+    grid-template-columns: 1fr;
+  }
+
+  .header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icons-nav {
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .facil {
+    grid-template-columns: 1fr;
+  }
+
+  .promocao .contador {
+    flex-direction: column;
+  }
+}
