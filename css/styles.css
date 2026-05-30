@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background: #000000;
@@ -28,6 +32,8 @@ img {
   background: #1a1a1a;
   position: sticky;
   top: 0;
+  border-bottom: #06b600 2px solid;
+  z-index: 99;
 }
 
 .header .container {
@@ -51,13 +57,19 @@ img {
 
 .nav {
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
 }
 
 .nav a {
   color:aliceblue;
   margin: 0 0.50rem;
+}
+
+.nav a:hover {
+  color: #1bce04;
+  text-decoration: underline 1px #0f7701;
+  text-underline-offset: 5px;
+  transition: color 0.3s, text-decoration-color 0.3s;
 }
 
 .icons-nav {
@@ -68,8 +80,8 @@ img {
 /* ================================================ */
 
 .hero {
-  padding: 1rem 0;
-  background: linear-gradient(90deg, #000000 30%, #006905 100%);
+  padding: 3rem;
+  background: linear-gradient(90deg, #000000 40%, #006905 100%);
   display: flex;
   align-items: center;
 }
@@ -78,9 +90,7 @@ img {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  margin: 0 1rem;
   width: 90%;
-  padding: 1rem 0;
 }
 
 .hero h1 {
@@ -97,6 +107,7 @@ img {
 .hero p {
   max-width: 520px;
   color: #ffffff;
+  margin: 0.5rem 0;
 }
 
 .hero-image {
@@ -135,6 +146,12 @@ img {
 
 .facil {
   display: flex; 
+  align-items: center;
+}
+
+.facil i {
+  font-size: 2rem;
+  color: #16a703;
 }
 
 .facil-item {
