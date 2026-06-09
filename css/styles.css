@@ -94,8 +94,8 @@ img {
 }
 
 .hero h1 {
-  font-size: 5rem;
-  width: 70%;
+  font-size: 6rem;
+  width: 80%;
   color: #ffffff;
 }
 
@@ -138,6 +138,7 @@ img {
   color: #ffffff;
 }
 
+/*isso faz que tanto o texto quanto o botão se movam */
 .btn:hover,
 .btn-info a:hover {
   transform: translateY(-2px);
@@ -164,6 +165,8 @@ img {
 .facil-item .cima {
   font-weight: 700;
 }
+
+/*=============================================== */
 
 /* .container-produtos,
 .container-sobre,
@@ -226,16 +229,77 @@ img {
   color: #555;
 } */
 
+/* ===================PRODUTOS========================== */
+
+.container-produtos {
+  background: rgb(8, 8, 8);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 2rem;
+  min-height: 100vh;
+}
+.container-produtos h3{
+  color: #16a703;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.produto {
+  border-radius: 24px;
+  padding: 1rem;
+  /* box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06); */
+  width: 23%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(210deg, #131313 60%, #005807 100%); */
+  background: #262626;
+  background: linear-gradient(205deg, #262626 20%, #041b00 65%, #008f00 100%);
+}
+
+.produto h4 {
+  margin: 1rem 0 0.5rem;
+}
+
+.produto p {
+  color: #069b01;
+  font-weight: 700;
+}
+
+.produto img {
+  border-radius: 18px;
+  padding: 0.5rem;
+}
+
 .btn-comprar {
   margin-top: 1rem;
   width: 100%;
   padding: 0.9rem;
-  border: none;
-  border-radius: 999px;
+  border: #06b600 2px solid;
+  border-radius: 10px;
   background: #111;
   color: #fff;
   cursor: pointer;
 }
+
+.btn-comprar:hover{
+  background: #06b600;
+  color: #000;
+  border-color: #045a01;
+  transform: translateY(-2px);
+}
+
+/* ==============SOBRE===================== */
 
 .container-sobre {
   background: #202020;
