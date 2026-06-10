@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Minha Loja</title>
+    <link rel="icon" href="images/inicio.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 </head>
@@ -20,25 +21,24 @@
                 <a href="#contato">Contato</a>
             </nav>
             <div class="icons-nav">
-                <a href="#"><i class="bi bi-search"></i></a>
-                <a href="#"><i class="bi bi-cart"></i></a>
-                <a href="#"><i class="bi bi-list"></i></a>
+                <a href="#" aria-label="Buscar"><i class="bi bi-search"></i></a>
+                <a href="#" aria-label="Carrinho"><i class="bi bi-cart"></i></a>
+                <a href="#" aria-label="Menu"><i class="bi bi-list"></i></a>
             </div>
         </div>
     </header>
 
-    <main>
-        <section id="inicio" class="hero">
-            <div class="container-hero">
-                <p id="colecao"></p>
-                <h1>Estilo que <span>te define</span></h1>
-                <p>Camisetas exclusivas para quem vive com atitude e personalidade.</p>
-                
+    <section id="inicio" class="hero">
+        <div class="container-hero">
+            <p id="colecao"></p>
+            <h1>Estilo que <span>te define</span></h1>
+            <p>Camisetas exclusivas para quem vive com atitude e personalidade.</p>
+            
                 <div class="btn-info">
                     <a href="">Comprar agora ></a>
                     <a href="#produtos" class="btn">Ver coleção</a>
                 </div>
-
+                
                 <div class="facil">
                     <i class="bi bi-truck"></i>
                     <div class="facil-item">
@@ -51,7 +51,7 @@
                         <p class="cima">Troca fácil</p>
                         <p class="baixo">até 7 dias</p>
                     </div>
-
+                    
                     <i class="bi bi-cash-stack"></i>
                     <div class="facil-item">
                         <p class="cima">Parcela em até</p>
@@ -61,7 +61,8 @@
             </div>
             <img class="hero-image" src="images/Inicio.png" alt="Imagem de destaque" >
         </section>
-
+        
+        <main>
         <section id="produtos" class="container-produtos">
             <p>Nossos produtos</p>
             <h3>Mais vendidos</h3>
@@ -95,26 +96,34 @@
         </section>
 
         <section id="sobre" class="container-sobre">
-            <img src="" alt="">
-            <h3>Sobre nós</h3>
-            <h1>Feito para quem é real</h1>
-            <p>A Code Wear nasceu da ideia de unir conforto, estilo e autencidade em cada detalhe.</p>
-            <p>Nossas peças são feitas para te acompanhar em todos os momentos.</p>
+            <img src="images/sobrenos.png" alt="Modelo">
+            <div class="info-sobre">
+                <h3>Sobre nós</h3>
+                <h1>Feito para quem é real</h1>
+                <p>A Code Wear nasceu da ideia de unir conforto, estilo e autencidade em cada detalhe.</p>
+                <p>Nossas peças são feitas para te acompanhar em todos os momentos.</p>
+            </div>
             <div class="grid-sobre">
-                <div class="sobre-item">
+                <div class="sobre-item um">
                     <i class="bi bi-gem"></i>
-                    <h1>Qualidade premium</h1>
-                    <p>Tecidos de alta qualidade para maximo conforto</p>
+                    <div class="item-texto">
+                        <h3>Qualidade premium</h3>
+                        <p>Tecidos de alta qualidade para maximo conforto</p>
+                    </div>
                 </div>
-                <div class="sobre-item">
+                <div class="sobre-item dois">
                     <i class="bi bi-award"></i>
-                    <h1>Estilo autentico</h1>
-                    <p>Designs unicos para destacar sua personalidade</p>
+                    <div class="item-texto">
+                        <h3>Estilo autentico</h3>
+                        <p>Designs unicos para destacar sua personalidade</p>
+                    </div>
                 </div>
-                <div class="sobre-item">
+                <div class="sobre-item tres">
                     <i class="bi bi-tree"></i>
-                    <h1>Sustentavel</h1>
-                    <p>Produções consciente e respeito ao meio ambiente</p>
+                    <div class="item-texto">
+                        <h3>Sustentavel</h3>
+                        <p>Produções consciente e respeito ao meio ambiente</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -176,4 +185,4 @@
     <script src="js/index.js"></script>
 </body>
 
-</html
+</html>
