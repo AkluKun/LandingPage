@@ -309,6 +309,76 @@ main {
   margin-bottom: 0.5rem;
 }
 
+/* ===============FEEDBACK===================== */
+.feedback {
+  color: #fff;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.feedback h3 {
+  color: #16a703;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.feedback p {
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+  font-size: 1.3rem;
+}
+
+.grid-feedback {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback-item {
+  background: #131616;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  width: 32%;
+  display: grid;
+  grid-template-areas:
+    "perfil nome nome"
+    "perfil estrela estrela"
+    "comentario comentario comentario";
+}
+
+.feedback img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  border: 2px solid #16a703;
+  grid-area: perfil;
+}
+
+.feedback-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  grid-area: nome;
+}
+.feedback-item p {
+  font-size: 1rem;
+  grid-area: comentario;
+}
+.feedback-item .stars {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  grid-area: estrela;
+}
+
+.feedback-item .stars i {
+  color: #16a703;
+  font-size: 1.2rem;
+}
 /* =================PROMOÇÃO======================= */
 
 .promocao {
@@ -386,6 +456,8 @@ main {
     flex-direction: column;
   }
 }
+
+/* =================================== */
 
 #colecao {
   font-size: 1.25rem;
