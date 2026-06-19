@@ -32,6 +32,8 @@ function loopTyping() {
 
 loopTyping();
 
+// ===========CONTADOR===============
+
 const fim = new Date();
 fim.setHours(fim.getHours() + 48);
 
