@@ -1,0 +1,278 @@
+/* Responsive CSS */
+
+.container {
+  max-width: 1200px;
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header .container {
+  padding: 1rem 0;
+}
+
+@media (max-width: 1024px) {
+  .header .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero-image {
+    width: 50%;
+  }
+
+  .grid {
+    justify-content: center;
+  }
+
+  .produto {
+    width: 48%;
+  }
+
+  .container-sobre {
+    width: 100%;
+  }
+
+  .promocao .container-promocao {
+    flex-wrap: wrap;
+  }
+
+  .footer .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .icons-nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    width: 100%;
+  }
+
+  .hero p {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .btn-info,
+  .facil,
+  .promocao .container-promocao {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-info a,
+  .btn {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .facil {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container-produtos,
+  .feedback,
+  .promocao {
+    padding: 1rem;
+  }
+
+  .produto {
+    width: 100%;
+  }
+
+  .container-sobre {
+    flex-direction: column;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .info-sobre {
+    width: 100%;
+    margin: 0;
+  }
+
+  .grid-sobre {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .grid-feedback {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .feedback-item {
+    width: 100%;
+  }
+
+  .promocao .container-promocao {
+    align-items: flex-start;
+  }
+
+  .container-contador .acaba {
+    margin-left: 0;
+  }
+
+  .container-promocao .btn {
+    width: 100%;
+  }
+
+  .footer .container {
+    align-items: flex-start;
+  }
+
+  .footer .footer-info {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav a {
+    margin: 0.5rem 0.5rem 0 0;
+    font-size: 1rem;
+  }
+
+  .icons-nav {
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .promocao .info-promocao h1 {
+    font-size: 1.8rem;
+  }
+
+  .promocao .contador {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .contador-item {
+    min-width: 70px;
+  }
+
+  .footer {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    justify-content: space-between;
+  }
+
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 1rem;
+  }
+
+  .hero .container-hero {
+    width: 52%;
+  }
+
+  .hero-image {
+    width: 42%;
+  }
+
+  .btn-info {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .facil {
+    gap: 1.5rem;
+  }
+
+  .grid {
+    justify-content: space-between;
+  }
+
+  .produto {
+    width: 23%;
+  }
+
+  .container-sobre {
+    flex-direction: row;
+    align-items: center;
+    height: 245px;
+  }
+
+  .info-sobre {
+    width: 50%;
+  }
+
+  .grid-sobre {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 1rem;
+  }
+
+  .grid-feedback {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .feedback-item {
+    width: 32%;
+  }
+
+  .promocao .container-promocao {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .footer .container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .footer .footer-info {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
