@@ -67,6 +67,7 @@
   .icons-nav {
     width: 100%;
     justify-content: flex-start;
+
   }
 
   .hero {
@@ -103,8 +104,11 @@
   }
 
   .facil {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
   }
 
   .container-produtos,
